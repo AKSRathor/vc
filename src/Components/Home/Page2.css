@@ -1,0 +1,69 @@
+#page2Home {
+    position: relative;
+    z-index: 3;
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* transform: translateY(100vh); */
+}
+
+#page2HomeDiv {
+    background: white;
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#page2heading h1 {
+    text-align: center;
+}
+
+#page2heading {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allContentsPage2Home {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.completeWWDTemp {
+    width: 70%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.headingWWD{
+    padding: 3%;
+    color: #222;
+    border-bottom: 1px solid black;
+    position: relative;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+    transform: rotateX(37deg) rotateY(-61deg);
+    opacity: 0;
+}
+.headingWWD::after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid;
+    width: 10%;
+    /* height: 7%; */
+    right: 0px;
+    bottom: 0px;
+    transform: rotateZ(122deg);
+    transform-origin: bottom right;
+    
+}
+
+.headingWWD:hover .headingWWD::after{
+    width: 20%;
+}

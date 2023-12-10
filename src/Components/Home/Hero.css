@@ -1,0 +1,115 @@
+#homePageHero{
+    width: 100%;
+    height: 100vh;
+}
+
+#heroHead{
+    text-align: center;
+    height: 45vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#insideHeroFixed{
+    position: fixed;
+    z-index: 2;
+}
+#heroHead h1{
+    width: 50%;
+    color: #222;
+    font-size: 4em;
+}
+
+.cssbuttons-io-button {
+    background: rgb(116,0,248);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em rgb(116,0,248);
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(116,0,248);
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: rgb(116,0,248);
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  #heroGSBtn{
+    display: flex;
+    justify-content: center;
+  }
+
+  #allHeroParticles{
+    height: 100vh;
+    position: absolute;
+    
+  }
+
+  #backgroundDarkpositioner{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    background-color:black ;
+    z-index: 3;
+    opacity: 0  ;
+  }
+
+  #canvas-container{
+    height: 100vh;
+    width: 100%;
+  }
+
+  #canvas-div{
+    height: 100vh;
+    position: fixed;
+    /* z-index: 8; */
+    width: 100%;
+  }
+
+  #canvas-div{
+    /* transform: translateX(25%) translateY(-5%);  */
+    z-index: 2;
+  }
+  #canvas-btc{
+    display: none;
+  }
