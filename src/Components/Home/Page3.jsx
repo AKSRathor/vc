@@ -16,6 +16,7 @@ const Page3 = () => {
             opacity: 1,
             stagger: 1,
             duration: 1,
+            
             ease: 'power4.out',
             scrollTrigger: {
                 trigger: "#page3Home",
@@ -25,27 +26,34 @@ const Page3 = () => {
             },
         });
 
-        const secondAnimation = firstAnimation.eventCallback("onComplete", () => {
+     firstAnimation.eventCallback("onComplete", () => {
             // if (!secondAnimationTriggered) {
-                gsap.to("#headPlaceAllContainpg3", {
+                const secondAnimation  = gsap.to("#headPlaceAllContainpg3", {
                     scale: 80,
                     x: "200%",
                     y: "40%",
+                    ease: 'power2.in',
                     scrollTrigger: {
                         trigger: "#page3Home",
-                        scrub: true,
+                        scrub: 1,
                         pin: true,
+                        pinSpacing:true,
+                        invalidateOnRefresh:true,
                     },
                 });
                 setSecondAnimationTriggered(true);
+
+                secondAnimation.eventCallback("onComplete",()=>{
+
+                })
             // }
         });
 
-        secondAnimation.eventCallback("onComplete", () => {
-            gsap.to("#headPlaceAllContainpg3", {
-              opacity: 0,
-            });
-          });
+        // secondAnimation.eventCallback("onComplete", () => {
+        //     gsap.to("#headPlaceAllContainpg3", {
+        //       opacity: 0,
+        //     });
+        //   });
         
 
         gsap.to("#canvas-div", {
