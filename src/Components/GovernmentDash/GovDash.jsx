@@ -1,14 +1,11 @@
 import React from 'react'
-import UserSider from './UserSider'
-import UserOwnedSection from './UserOwnedSection'
-import "./DashPage.css"
-import Rents from './Rents'
 import { Outlet } from 'react-router-dom'
+import GovSider from './GovSider'
 
-const DashPage = () => {
+const GovDash = () => {
   return (
     <div id='dashPage'>
-      <UserSider />
+      <GovSider />
       <div className="rightSideUserInterface">
         {/* <UserOwnedSection /> */}
         {/* <Rents/> */}
@@ -18,4 +15,4 @@ const DashPage = () => {
   )
 }
 
-export default DashPage
+export default GovDash

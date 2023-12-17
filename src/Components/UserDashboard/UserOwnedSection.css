@@ -1,0 +1,186 @@
+#ownHeadingSection {
+  text-align: center;
+}
+
+.viewDetailsOwnSectionBtn {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.viewDetailsOwnSectionBtn {
+  background: rgb(116, 0, 248);
+  background: linear-gradient(0deg, rgb(116, 0, 248) 0%, rgb(116, 0, 248) 100%);
+  border: none;
+}
+
+.viewDetailsOwnSectionBtn:hover {
+  background: rgb(129, 19, 255);
+  background: linear-gradient(0deg, rgb(129, 19, 255) 0%, rgb(172, 100, 255) 100%);
+}
+
+.ownSectionListCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2%;
+  width: 70%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+#ownSectionUserlist {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 30px;
+  padding-top: 3%;
+  flex-direction: column;
+}
+.css-6z8jno{
+  width: 50% !important;
+}
+
+.landRequestMakerName{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.accOrRejReq{
+  display: flex;
+  gap: 20px;
+}
+.accReqBtn {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: white;
+  --button_outline_color: rgb(116,0,248);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.accReqBtnSpan {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.3em 1em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.accReqBtn:hover .accReqBtnSpan {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+.accReqBtn:active .accReqBtnSpan {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+
+.rejReqBtn {
+  --button_radius: 0.75em;
+  --button_color: white;
+  --button_outline_color: rgb(116,0,248);
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  cursor: pointer;
+  /* background: var(--button_outline_color); */
+}
+
+.rejReqBtnSpan {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.3em 1.5rem;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.rejReqBtn:active .rejReqBtnSpan {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+
+.allYourRequests {
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 3%;
+  background-color: #c6c6c6;
+  height: 32vh;
+}
+.css-6z8jno{
+  left: 25% !important;
+  top: 2% !important;
+}
+.landDetailsOwnUser{
+  position: relative;
+}
+.landUserDetailRent{
+  position: relative;
+}
+.landDetailsEditDiv{
+  position: absolute;
+  right: 2%;
+}
+
+.rentDetailsEditDiv{
+  position: absolute;
+  right: 2%;
+}
+
+.rentDetailsEditDiv button{
+  background-color: transparent;
+  border: none;
+
+  padding: 15%;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: rgb(116, 0, 248);
+  
+} 
+.landDetailsEditDiv button{
+  background-color: transparent;
+  border: none;
+
+  padding: 15%;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: rgb(116, 0, 248);
+  
+}
+.allInsideTheLandDetailsBox{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  height: 90vh;
+  justify-content: center;
+  overflow-y: auto;
+}

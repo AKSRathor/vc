@@ -1,0 +1,6 @@
+#dashPage{
+    display: flex;
+}
+.rightSideUserInterface{
+    width: 80%;
+}

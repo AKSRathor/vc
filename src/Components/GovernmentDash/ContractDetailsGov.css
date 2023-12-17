@@ -1,0 +1,30 @@
+#ContractDetailsGovHeadDiv{
+    text-align: center;
+}
+.govAllContractCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.contractDetailsCard{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.govContractCardMoreInfoBtnDiv{
+    display: flex;
+    /* width: 95%; */
+    justify-content: right;
+}
+.govContractCardMoreInfoBtnDiv button{
+    background-color: rgb(116,0,248);
+}
+.govContractCardMoreInfoBtnDiv button:hover{
+    background-color: rgb(60, 0, 129);
+}

@@ -1,0 +1,90 @@
+#rentUserHeading{
+    text-align: center;
+}
+
+#allUserRentalDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    gap: 20px
+}
+
+.userRentCards{
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1%;
+}
+
+.landOwnerRent, .landCityRent{
+    font-size: 0.8em;
+    padding: 0.2% 0%;
+}
+.landCityRent{
+    font-weight: 500;
+}
+.showMoreAboutRentsBtnDiv button{
+    background-color: rgb(183, 119, 255);
+    color: white;
+    /* width: 30px; */
+    /* height: 30px; */
+    position: absolute;
+    right: 3%;
+    transform-origin: 50% 50% ;
+    top: 50%;
+}
+
+.showMoreAboutRentsBtnDiv button:Hover{
+    background-color: rgb(102, 0, 219);
+
+}
+.rentExtendContractButton button{
+    background-color: rgb(116,0,248);
+}
+.rentExtendContractButton button:hover{
+    
+    background-color: rgb(115, 0, 247);
+}
+.rentDetailsBtns{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.rentDetailsBtns button{
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.rentContractDuration{
+    height: 0.8vh;
+    width: 80%;
+    background-color: rgb(116,0,248);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.rentContractDuration::after{
+    content: "";
+    background-color: white;
+    opacity: 0.3;
+    width: 10%;
+    position: absolute;
+    height: 100%;
+    animation: durationMover 1s ease-out  infinite  ;
+}
+
+@keyframes durationMover {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.css-6z8jno{
+    border: none !important;
+}
