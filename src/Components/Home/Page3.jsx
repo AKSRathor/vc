@@ -1,9 +1,10 @@
+import SplitType from 'split-type'
 import React, { useEffect, useState } from 'react'
 import "./Page3.css"
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
-import SplitType from 'split-type'
+
 
 
 const Page3 = () => {
