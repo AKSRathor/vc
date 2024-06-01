@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Box from '@mui/material/Box';
+import Grow from '@mui/material/Grow';
 // import Modal from '@mui/material/Modal';
 import Modal from '@mui/joy/Modal';
 import Button from '@mui/material/Button';
@@ -7,7 +8,7 @@ import UserLandReqCard from './UserLandReqCard';
 import { gsap } from 'gsap'
 import { ScrollTrigger, CustomEase, Power3 } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
-import Grow from '@mui/material/Grow';
+
 
 
 const style = {
