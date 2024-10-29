@@ -17,6 +17,19 @@ import ContractDetailsGov from './Components/GovernmentDash/ContractDetailsGov';
 import Login from './Components/Login/Login';
 import Footer from './Components/Footer/Footer';
 
+const myfunc = async()=> {
+  const response = await fetch(`https://llm-verifier.vercel.app/selectmodel`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ })
+  })
+  await response.json()
+
+}
+myfunc()
+
 function App() {
   return (
     <>
